@@ -1,12 +1,18 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "graphs_sriveram"
-version = "0.1.0"
-description = "A Python library that implements Dijkstra's shortest path algorithm."
+version = "0.0.1"
+authors = [
+  { name="steph", email="sriver49@msudenver.edu" },
+]
+description = "A small example package"
+readme = "README.md"
 requires-python = ">=3.9"
-
-[tool.setuptools]
-packages = ["graphs_sriveram"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
